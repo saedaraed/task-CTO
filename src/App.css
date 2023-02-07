@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.hero-parent{
+  margin-top: 100px;
+  width: 100%;
+}
+.hero-parent-left{
+text-align:left;
+ width:50%;
+}
+.hero-parent-right{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+  }
+  .hero-parent-right .card{
+    width:380px ;
+     border-radius:20px;
+  }
+  .hero-parent-right .card .card-media{
+    height: 209px;
+  }
+  .title-hero{
+    font-size:30px!important ;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+@media (max-width:768px) {
+  .hero-parent-left {
+ width:100%;
+  }
+  .hero-parent-right{
+    width: 100%;
+  }
+}
+
+.card-opport{
+  border-radius: 20px;
+  text-align: left;
+  padding: 20px 0px;
+}
+@media (max-width:768px) {
+ .card-opport {
+ flex-direction: column;
+ align-items: center;
+ gap: 10px;
+  }
+}
+
+.navbar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 50px 0px;
+}
+@media (max-width:768px) {
+ 
+}
+
+.button-details{
+  margin-top: 50px!important;
+  width: 328px!important;
+  height: 51px!important;
+}
+.isDisplay{
+  display: none!important;
+}
+.slider-parent{
+  margin-top: 50px;
+}
+.swiper-button-disable{
+  color: red!important;
+}
+.swiper-button-next,
+.swiper-button-prev{
+  background-color: rgb(255, 255, 255);
+  width: 43px!important;
+  height: 43px!important;
+    box-shadow:  0 0 7px 2px #00000063;
+  border-radius: 50%;
+}
+.swiper-button-prev.swiper-button-disabled{
+      box-shadow: none;
+
+}
+.swiper-button-prev.swiper-button-disabled::after{
+color: transparent;
+}
+
+.swiper-button-next::after{
+
+
+  color: rgb(0, 0, 0);
+}
+:root {   --swiper-navigation-size: 24px!important; 
+}
