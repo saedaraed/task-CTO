@@ -1,5 +1,6 @@
 import { Box, CardMedia, Link, Typography } from '@mui/material'
 import Button from './ButtonCom'
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import '../App.css'
 interface PropOpportunity{
     title:string
@@ -12,37 +13,44 @@ export default function CardOpportunity({title , image, link , location , typewo
   return (
     <>
       <Box className='card-opport flex' >
+        <Box sx={{width:'25%' , display:'flex' , justifyContent:'center'}}>
         <CardMedia
         component="img"
         sx={{ width: 'auto' , height:'50px' }}
         image={image}
         alt="img"
           /> 
-          <Box>
-           <Typography component="div" variant="h6">
+          </Box>
+          <Box sx={{width:'25%'}}>
+           <Typography component="div" variant="h6" sx={{fontSize:'15px' , fontWeight:'bold'}}>
             {title}
            </Typography>
-              <Link href="#">{link }</Link>
-              <Box sx={{display:'flex' , gap:'10px'}}>
-                  <Typography component="div"  variant="caption" display="block" >
+            <Link href="#" sx={{fontSize:'12px'}}>{link }</Link>
+          <Box sx={{ display: 'flex', gap: '10px' , marginTop:'20px' }}>
+            <Box sx={{display:'flex' , width:'50%'}}>
+              <LocationOnIcon sx={{fontSize:'12px', marginTop:'3px'}} />
+              <Typography component="div"  variant="caption" display="block" sx={{fontSize:'10px'}}>
                       {location}
-                  </Typography> 
-                  <Box>
-                   <Typography component="div" variant="button"  display="block" >
+              </Typography> 
+            </Box>
+                  
+                  <Box sx={{width:'50%'}}>
+                    <Typography component="div" variant="caption"  display="block" sx={{fontSize:'10px', fontWeight:'bold'}} >
                       Type of work
-                  </Typography> 
-                  <Typography component="div"  variant="caption" display="block" >
+                    </Typography> 
+                    <Typography component="div"  variant="caption" display="block" sx={{fontSize:'10px'}}>
                       {typework}
-                  </Typography> 
+                     </Typography> 
                   </Box>
               </Box>
             
-          </Box>
-        <Box><Button linTo={`/details`  } /></Box>
+        </Box>
+        <Box sx={{width:'25%'}}></Box>
+        <Box sx={{width:'25%'}}><Button linTo={`/details`  } /></Box>
               
            
       </Box>
-      <hr />
+      <Box className="line-style" ></Box>
       </>
   )
 }

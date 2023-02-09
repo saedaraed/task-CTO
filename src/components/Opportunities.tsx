@@ -1,6 +1,6 @@
 import { Paper, Typography } from '@mui/material'
-import ImageOne from '../assets/image 181.png'
-import ImageTwo from '../assets/image 314.png'
+import ImageOne from '../assets/2222 2.png'
+import ImageTwo from '../assets/image 181.png'
 import CardOpportunity from './CardOpportunity';
 const data = [{
         id: 1,
@@ -24,9 +24,9 @@ const data = [{
 export default function Opportunities() {
     return (
         <>
-             <Typography component="div" variant="h6" sx={{margin:'80px 0px' , textAlign:'left' ,fontSize:'30px' , fontWeight:'bold'}}>
+             <Typography component="div" variant="h6" sx={{margin:'80px 0px 0px' , textAlign:'left' ,fontSize:'30px' , fontWeight:'bold', marginLeft:'40px'}}>
              Open opportunities             </Typography>
-            <Paper elevation={3} sx={{padding:'30px'}} >
+            <Paper elevation={3} sx={{padding:'40px 65px' , borderRadius:'20px', margin:'30px 0px'}} >
                 {data.map((index) => {
                     return (
                         <CardOpportunity key={index.id} title={ index.title} image={index.image} link={index.link} location={index.location} typework={index.typework}/> 

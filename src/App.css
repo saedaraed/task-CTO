@@ -90,7 +90,8 @@ text-align:left;
 .card-opport{
   border-radius: 20px;
   text-align: left;
-  padding: 20px 0px;
+  align-items: center;
+  /* padding: 20px 0px; */
 }
 @media (max-width:768px) {
  .card-opport {
@@ -105,8 +106,8 @@ text-align:left;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
-  padding: 50px 0px;
+  height: 1370px;
+  padding: 70px 0px;
 }
 @media (max-width:768px) {
  
@@ -138,14 +139,53 @@ text-align:left;
       box-shadow: none;
 
 }
+.swiper-button-next.swiper-button-disabled{
+      box-shadow: none;
+
+}
 .swiper-button-prev.swiper-button-disabled::after{
 color: transparent;
 }
+.swiper-button-next.swiper-button-disabled::after{
+color: transparent;
+}
+
 
 .swiper-button-next::after{
+font-size: 15px!important;
+font-weight: bolder!important;
 
+  color: rgb(0, 0, 0);
+}
+.swiper-button-prev::after{
+font-size: 15px!important;
+font-weight: bolder!important;
 
   color: rgb(0, 0, 0);
 }
 :root {   --swiper-navigation-size: 24px!important; 
+}
+.line-style{
+  width:939px;
+  height:.5px ;
+
+  /* padding: 40px 0px!important; */
+}
+.line-style:not(:last-child) {
+  border-top:solid 1px #C4C4C4;
+  margin:40px auto!important;
+
+}
+
+.button-style {
+  border-radius: 100px!important;
+  border-color: #C4C4C4!important;
+  color: #000!important;
+  width: 155px!important;
+  min-width: 12px!important;
+  font-size: 13px!important;
+  display: flex!important;
+  align-items:center;
+  justify-content: space-around!important;
+  height: 35px!important;
 }

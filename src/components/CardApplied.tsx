@@ -3,14 +3,13 @@ import Image from '../../assets/image 181.png'
 
 interface PropsApplied{
     title:string
-    state: string
     image:string
     link:string
 }
 
-export default function CardApplied({title, state , image , link}:PropsApplied) {
+export default function CardApplied({title , image , link}:PropsApplied) {
   return (
-      <Paper  elevation={3} sx={{ display: 'flex' , alignItems:'center', justifyContent:'space-between',  borderRadius:'20px' , padding:'30px 0px 0px 30px' , margin:'20px 10px', height:'168px' }}>
+      <Paper  elevation={3} sx={{ display: 'flex' , alignItems:'center', justifyContent:'space-between',  borderRadius:'20px' , padding:'30px 0px 0px 30px' , margin:'30px 10px 10px', height:'168px' }}>
         <CardMedia
         component="img"
         sx={{ width: '30px' , height:'auto'}}
@@ -28,7 +27,7 @@ export default function CardApplied({title, state , image , link}:PropsApplied) 
             </Grid>
              <Box sx={{backgroundColor:'#8528C8' ,borderBottomRightRadius:'20px', padding:'5px 15px'}}>
              <Typography component="div" variant="h6" sx={{fontSize:'14px' , fontWeight:'bold', color:'#fff'}}>
-                 {state}
+                Applied
              </Typography>
              </Box>
          

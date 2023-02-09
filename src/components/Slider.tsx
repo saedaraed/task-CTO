@@ -56,12 +56,12 @@ export default function Slider() {
   return (
       <>
       <Grid className='slider-parent flex' >
-         <Typography component="div" variant="h6" sx={{fontSize:'30px' , fontWeight:'bold'}}>
+         <Typography component="div" variant="h6" sx={{fontSize:'30px' , fontWeight:'bold', marginLeft:'40px'}}>
              You have applied for
           </Typography>
            <Link href="#" sx={{color:'#8528C8' , fontSize:'20px', textDecoration:'none' , fontWeight:'bold'}}>View interview request</Link>       
       </Grid>
-          <Box sx={{marginTop:'25px'}}>
+          <Box >
         {isLoading ? ('loading..') : (
           <Swiper 
      
@@ -95,7 +95,7 @@ export default function Slider() {
          >
               {products.map((info:any) => {
                   return (
-                      <SwiperSlide key={info.id}> <CardApplied title={info.title} image={info.url} state={info.title} link={info.thumbnailUrl}/> </SwiperSlide>  
+                      <SwiperSlide key={info.id}> <CardApplied title={info.title} image={info.url} link={info.thumbnailUrl}/> </SwiperSlide>  
                   )
               })}
         
