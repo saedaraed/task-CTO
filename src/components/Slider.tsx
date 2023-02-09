@@ -13,6 +13,9 @@ import ImageTwo from '../assets/image 314.png'
 import ImageThree from '../assets/STC.png'
 import '../App.css'
 
+import { useDispatch , useSelector } from "react-redux";
+import {fetchProduct} from '../store/productSlice'
+import { useEffect } from "react";
 const data = [{
         id: 1,
         title: "Marketing and Business Development Intern",
@@ -43,16 +46,24 @@ const data = [{
     },
 ];
 export default function Slider() {
+  const { isLoading, products } = useSelector((state: any) => state.products)
+  console.log('data' , products)
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch<any>(fetchProduct())
+  }, [dispatch])
   return (
       <>
       <Grid className='slider-parent flex' >
-         <Typography component="div" variant="h6">
+         <Typography component="div" variant="h6" sx={{fontSize:'30px' , fontWeight:'bold'}}>
              You have applied for
           </Typography>
            <Link href="#" sx={{color:'#8528C8' , fontSize:'20px', textDecoration:'none' , fontWeight:'bold'}}>View interview request</Link>       
       </Grid>
-          <Box sx={{marginTop:'30px'}}>
-        <Swiper 
+          <Box sx={{marginTop:'25px'}}>
+        {isLoading ? ('loading..') : (
+          <Swiper 
      
                    breakpoints={{
  
@@ -82,14 +93,16 @@ export default function Slider() {
         modules={[Navigation, Mousewheel, Keyboard]}
         className="mySwiper"
          >
-              {data.map((info) => {
+              {products.map((info:any) => {
                   return (
-                      <SwiperSlide key={info.id}> <CardApplied title={info.title} image={info.image} state={info.state} link={info.link}/> </SwiperSlide>  
+                      <SwiperSlide key={info.id}> <CardApplied title={info.title} image={info.url} state={info.title} link={info.thumbnailUrl}/> </SwiperSlide>  
                   )
               })}
         
        
               </Swiper>
+          
+       )} 
               </Box>
     </>
   );

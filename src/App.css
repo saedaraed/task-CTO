@@ -44,8 +44,13 @@
   flex-direction: row;
 }
 .hero-parent{
-  margin-top: 100px;
+  margin-top: 190px;
   width: 100%;
+}
+.par-hero{
+  line-height: 37px!important;
+  margin-top: 35px!important;
+  font-size: 20px!important;
 }
 .hero-parent-left{
 text-align:left;
@@ -60,11 +65,16 @@ text-align:left;
     width:380px ;
      border-radius:20px;
   }
+  .weightFont{
+    font-weight: bold!important;
+    font-size: 11px!important;
+  }
   .hero-parent-right .card .card-media{
     height: 209px;
   }
   .title-hero{
     font-size:30px!important ;
+    font-weight: bold!important;
     width: 70%;
     margin-bottom: 20px;
   }
@@ -111,7 +121,7 @@ text-align:left;
   display: none!important;
 }
 .slider-parent{
-  margin-top: 50px;
+  margin-top: 55px;
 }
 .swiper-button-disable{
   color: red!important;

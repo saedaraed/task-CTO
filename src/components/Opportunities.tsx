@@ -24,13 +24,12 @@ const data = [{
 export default function Opportunities() {
     return (
         <>
-             <Typography component="div" variant="h6" sx={{margin:'50px 0px' , textAlign:'left'}}>
-                Marketing and Business Development Intern
-             </Typography>
+             <Typography component="div" variant="h6" sx={{margin:'80px 0px' , textAlign:'left' ,fontSize:'30px' , fontWeight:'bold'}}>
+             Open opportunities             </Typography>
             <Paper elevation={3} sx={{padding:'30px'}} >
                 {data.map((index) => {
                     return (
-                        <CardOpportunity title={ index.title} image={index.image} link={index.link} location={index.location} typework={index.typework}/> 
+                        <CardOpportunity key={index.id} title={ index.title} image={index.image} link={index.link} location={index.location} typework={index.typework}/> 
                     )
                 })}
                

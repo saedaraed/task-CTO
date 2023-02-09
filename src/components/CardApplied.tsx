@@ -13,7 +13,7 @@ export default function CardApplied({title, state , image , link}:PropsApplied) 
       <Paper  elevation={3} sx={{ display: 'flex' , alignItems:'center', justifyContent:'space-between',  borderRadius:'20px' , padding:'30px 0px 0px 30px' , margin:'20px 10px', height:'168px' }}>
         <CardMedia
         component="img"
-        sx={{ width: 'auto' , height:'auto'}}
+        sx={{ width: '30px' , height:'auto'}}
         image={image}
         alt="img"
               />
@@ -24,7 +24,7 @@ export default function CardApplied({title, state , image , link}:PropsApplied) 
               <Typography component="div" variant="h6" sx={{paddingRight:'30px', fontSize:'15px' , fontWeight:'bold'}}>
             {title}
               </Typography>
-              <Link href="#">{link}</Link>
+              <Link href={link}>name</Link>
             </Grid>
              <Box sx={{backgroundColor:'#8528C8' ,borderBottomRightRadius:'20px', padding:'5px 15px'}}>
              <Typography component="div" variant="h6" sx={{fontSize:'14px' , fontWeight:'bold', color:'#fff'}}>

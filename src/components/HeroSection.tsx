@@ -14,16 +14,17 @@ export default function HeroSection() {
                  <Typography className="title-hero" variant="h1" gutterBottom >
                    Program opportunities and application status 
                  </Typography>
-                  <Typography variant="subtitle1" gutterBottom>
+                  <Typography className="par-hero" variant="subtitle1" gutterBottom>
                    Now that you have received conditional offer to the program, you can start applying for the opportunities below. <Link sx={{color:'#000', fontWeight:'bold' , textDecoration:'none'}}>There is a limit on how many you can apply.</Link>  There will be further interviews with the company if you have been shortlisted by them.
                   </Typography>
               </Box>
               <Box className='hero-parent-right'> 
                  
                   <Card className='card' >
-                      <CardMedia
+                      {/* <CardMedia
                          image={Image}
-                         title="green iguana"/>
+                         title="green iguana"/> */}
+                         <img src={Image} alt="" />
                       <CardContent>
                           <Grid sx={{
                               display: 'flex', justifyContent: 'space-between', alignItems:'center'}}>
@@ -32,33 +33,33 @@ export default function HeroSection() {
                               </Typography>
                               <img src={ImageTwo} />
                           </Grid>
-                          <Grid sx={{display:'flex' , gap:'10px', justifyContent:'space-between' , textAlign:'left'}}>
-                            <Box>  <Typography component="div"  variant="caption" display="block" >
+                          <Grid sx={{display:'flex' , gap:'10px', justifyContent:'space-between' , textAlign:'left' , fontWeight:'bold'}}>
+                            <Box>  <Typography className="weightFont" component="div"  variant="caption" display="block" >
                             Riyadh, <br />  Saudi Arabia
 
                             </Typography> </Box>
                             <Box>
                               <Box sx={{marginBottom:'10px'}}>
-                                <Typography component="div"  variant="caption" display="block" >
+                                <Typography className="weightFont" component="div"  variant="caption" display="block" >
                                   Application open
                                 </Typography>
-                               <Typography component="div"  variant="caption" display="block" >
+                               <Typography className="weightFont" component="div"  variant="caption" display="block" >
                                    13 Jan 2023
                                 </Typography>
                               </Box>
                               <Box sx={{marginBottom:'10px'}}>
-                                <Typography component="div"  variant="caption" display="block" >
+                                <Typography className="weightFont" component="div"  variant="caption" display="block" >
                                    Programme type
                                 </Typography>
-                               <Typography component="div"  variant="caption" display="block" >
+                               <Typography className="weightFont" component="div"  variant="caption" display="block" >
                                    Internship
                                 </Typography>
                               </Box>
                               <Box sx={{marginBottom:'10px'}}>
-                                <Typography component="div"  variant="caption" display="block" >
+                                <Typography className="weightFont" component="div"  variant="caption" display="block" >
                                    Programme
                                 </Typography>
-                               <Typography component="div"  variant="caption" display="block" >
+                               <Typography className="weightFont" component="div"  variant="caption" display="block" >
                                    13 Jan 2023
                                 </Typography>
                               </Box>
@@ -66,18 +67,18 @@ export default function HeroSection() {
                             </Box>
                             <Box>
                             <Box sx={{marginBottom:'10px'}}>
-                                <Typography component="div"  variant="caption" display="block" >
+                                <Typography className="weightFont" component="div"  variant="caption" display="block" >
                                    Application close
                                 </Typography>
-                               <Typography component="div"  variant="caption" display="block" >
+                               <Typography className="weightFont" component="div"  variant="caption" display="block" >
                                    01 March 2023
                                 </Typography>
                               </Box>
                               <Box sx={{marginBottom:'10px'}}>
-                                <Typography component="div"  variant="caption" display="block" >
+                                <Typography className="weightFont" component="div"  variant="caption" display="block" >
                                     Duration
                                 </Typography>
-                               <Typography component="div"  variant="caption" display="block" >
+                               <Typography className="weightFont" component="div"  variant="caption" display="block" >
                                    6 weeks
                                 </Typography>
                               </Box>
