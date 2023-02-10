@@ -26,14 +26,14 @@ export default function HeroSection() {
                       {/* <CardMedia
                          image={Image}
                          title="green iguana"/> */}
-                         <img src={Image} alt="" />
+                         <img src={Image} alt="" style={{marginTop:'-5px'}}/>
                       <CardContent sx={{padding:'0px 25px'}}>
                           <Grid sx={{
                               display: 'flex', justifyContent: 'space-between', alignItems:'center' , marginTop:'15px'}}>
                               <Typography gutterBottom variant="h5" component="div" sx={{fontSize:'24px' , fontWeight:'bold', width:'70%' , textAlign:'left'}}>
                               Virtual work experince
                               </Typography>
-                              <img src={ImageTwo} />
+                            <img src={ImageTwo}  />
                           </Grid>
                           <Grid sx={{display:'flex' , gap:'10px', justifyContent:'space-between' , textAlign:'left' , fontWeight:'bold' , marginTop:'15px'}}>
                             <Box sx={{display:'flex'}}> <LocationOnIcon sx={{fontSize:'12px', marginTop:'3px'}} />  <Typography className="weightFont" component="div"  variant="caption" display="block" >

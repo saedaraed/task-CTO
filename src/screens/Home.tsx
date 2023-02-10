@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <Box sx={{ flexGrow: 1 }}>
     <Grid container spacing={2}>
-      <Grid item xs={1}>
+      <Grid item xs={2} sm={1} md={1}>
         <Navbar isDisplay='isDisplay'/> 
       </Grid>
-      <Grid item xs={11}> 
+      <Grid item xs={10} sm={11} md={11}> 
           <Container maxWidth="lg">
               <HeroSection/>
               <Slider />

@@ -56,10 +56,10 @@ export default function Slider() {
   return (
       <>
       <Grid className='slider-parent flex' >
-         <Typography component="div" variant="h6" sx={{fontSize:'30px' , fontWeight:'bold', marginLeft:'40px'}}>
+         <Typography className='slider-title' component="div" variant="h6">
              You have applied for
           </Typography>
-           <Link href="#" sx={{color:'#8528C8' , fontSize:'20px', textDecoration:'none' , fontWeight:'bold'}}>View interview request</Link>       
+           <Link href="#" className='slider-link' >View interview request</Link>       
       </Grid>
           <Box >
         {isLoading ? ('loading..') : (

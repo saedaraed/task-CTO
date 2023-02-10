@@ -21,12 +21,12 @@ export default function CardOpportunity({title , image, link , location , typewo
         alt="img"
           /> 
           </Box>
-          <Box sx={{width:'25%'}}>
+          <Box className='part-card' >
            <Typography component="div" variant="h6" sx={{fontSize:'15px' , fontWeight:'bold'}}>
             {title}
            </Typography>
             <Link href="#" sx={{fontSize:'12px'}}>{link }</Link>
-          <Box sx={{ display: 'flex', gap: '10px' , marginTop:'20px' }}>
+          <Box className=' part-card-two' sx={{ display: 'flex', gap: '10px' , marginTop:'20px'}}>
             <Box sx={{display:'flex' , width:'50%'}}>
               <LocationOnIcon sx={{fontSize:'12px', marginTop:'3px'}} />
               <Typography component="div"  variant="caption" display="block" sx={{fontSize:'10px'}}>
@@ -46,7 +46,7 @@ export default function CardOpportunity({title , image, link , location , typewo
             
         </Box>
         <Box sx={{width:'25%'}}></Box>
-        <Box sx={{width:'25%'}}><Button linTo={`/details`  } /></Box>
+        <Box className='part-card '><Button  linTo={`/details`  }  /></Box>
               
            
       </Box>

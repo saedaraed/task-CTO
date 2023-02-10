@@ -24,7 +24,7 @@ const data = [{
 export default function Opportunities() {
     return (
         <>
-             <Typography component="div" variant="h6" sx={{margin:'80px 0px 0px' , textAlign:'left' ,fontSize:'30px' , fontWeight:'bold', marginLeft:'40px'}}>
+             <Typography className='slider-title' component="div" variant="h6" sx={{margin:'80px 0px 0px' , textAlign:'left'}}>
              Open opportunities             </Typography>
             <Paper elevation={3} sx={{padding:'40px 65px' , borderRadius:'20px', margin:'30px 0px'}} >
                 {data.map((index) => {

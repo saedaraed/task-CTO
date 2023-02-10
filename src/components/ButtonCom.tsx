@@ -8,7 +8,7 @@ interface styleProps{
 export default function ButtonCom({isWidth , linTo}:styleProps) {
   return (
     // <Button variant="contained">Apply Now</Button>
-    <Link to = {linTo}> <Button variant="contained" className={isWidth} sx={{backgroundColor:'#22215B' , width:'233px' , height:'71px', fontSize:'20px'}}>{" Apply now"}
+    <Link to = {linTo} className="link-hyper" style={{ textDecoration: 'none'}}> <Button variant="contained" className ={`${isWidth} butt`} sx={{backgroundColor:'#22215B' , width:'233px' , height:'71px', fontSize:'20px' , textTransform:'lowercase'}}>{" Apply now"}
     </Button></Link>
 
 
