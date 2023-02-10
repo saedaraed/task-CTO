@@ -30,7 +30,7 @@ export default function HeroSection() {
                       <CardContent sx={{padding:'0px 25px'}}>
                           <Grid sx={{
                               display: 'flex', justifyContent: 'space-between', alignItems:'center' , marginTop:'15px'}}>
-                              <Typography gutterBottom variant="h5" component="div" sx={{fontSize:'24px' , fontWeight:'bold', width:'70%' , textAlign:'left'}}>
+                              <Typography className="title-media" gutterBottom variant="h5" component="div" sx={{fontSize:'24px' , fontWeight:'bold', width:'70%' , textAlign:'left'}}>
                               Virtual work experince
                               </Typography>
                             <img src={ImageTwo}  />

@@ -26,7 +26,7 @@ export default function Opportunities() {
         <>
              <Typography className='slider-title' component="div" variant="h6" sx={{margin:'80px 0px 0px' , textAlign:'left'}}>
              Open opportunities             </Typography>
-            <Paper elevation={3} sx={{padding:'40px 65px' , borderRadius:'20px', margin:'30px 0px'}} >
+            <Paper className='card-opp' elevation={3} sx={{padding:'40px 65px' , borderRadius:'20px', margin:'30px 0px'}} >
                 {data.map((index) => {
                     return (
                         <CardOpportunity key={index.id} title={ index.title} image={index.image} link={index.link} location={index.location} typework={index.typework}/> 

@@ -46,7 +46,7 @@ export default function CardOpportunity({title , image, link , location , typewo
             
         </Box>
         <Box sx={{width:'25%'}}></Box>
-        <Box className='part-card '><Button  linTo={`/details`  }  /></Box>
+        <Box className='part-card opp-button'><Button linTo={`/details`  }  /></Box>
               
            
       </Box>
