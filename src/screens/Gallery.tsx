@@ -5,21 +5,15 @@ import TabsCategory from '../components/TabsCategory';
 import SellerSlider from '../components/GoodSellerSlider';
 import JoinCard from '../components/Join';
 import Footer from '../components/Footer';
-import BrandStory from '../components/BrandStory';
-import Acheivement from '../components/Acheivement';
-import BetterSection from '../components/BetterSection';
-export default function Home() {
+
+export default function Gallery() {
   return (
       <div>
-            <TopNav/>
+          <TopNav/>
           <Navbar />
           <HeroSection />
-      <TabsCategory title='Our Premium Collection' />
-          <BrandStory />
-          <Acheivement/>
+          <TabsCategory title='Our Gallery'/>
       <SellerSlider />
-      
-      <BetterSection/>
       <JoinCard />
       <Footer/>
     </div>
